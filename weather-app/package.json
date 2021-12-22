@@ -15,6 +15,9 @@
     "react-scripts": "5.0.0",
     "redux-thunk": "2.4.1"
   },
+  "node": {
+    "fs": "empty"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

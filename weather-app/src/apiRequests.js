@@ -1,6 +1,7 @@
 require('dotenv').config({ path: "../.env" })
 const axios = require("axios")
 const apiKey = process.env.WEATHER_KEY;
+// const apiKey="1ae82b3204071ebdcedd698e8f77189e";
 
 async function getWeather(city) {
     try {
@@ -8,7 +9,7 @@ async function getWeather(city) {
         return req;
     }
     catch(err){
-        return err.response.data;
+        throw err.response.data;
     }
 }
 
