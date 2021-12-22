@@ -5,5 +5,7 @@ export default function weatherReducer(state = initalState, action) {
         case "ADD_CITY":
             const newCityData = {}
             return [...state, newCityData]
+        default:
+            return state;
     }
 }
