@@ -24,6 +24,9 @@ export default function SearchCity() {
             dispatch(setCurrCity(value.data))
             dispatch(updateCities())
         })
+        .catch((value)=>{
+            alert(value.message)
+        })
         setCity("")
     }
 
